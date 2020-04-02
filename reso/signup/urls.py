@@ -3,5 +3,7 @@ from . import views
 # Create your views here.
 
 urlpatterns = [
-    path('signup/', views.signup)
+    path('signup/', views.Signup),
+    path('userform/', views.UserForm)
+
 ]

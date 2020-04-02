@@ -1,2 +1,17 @@
-<p>WHATS UP CUZZIN</p>
-<script type="text/javascript" src="{% 'js/scheduleTutor.js' %}"></script>
+<p>WHATS UP CUaZZIN</p>
+<form action="/userform/" method="post">
+  {% csrf_token %}
+  <label for="name1">Your name: </label>
+  <input id="name1" type="text" name="name" maxlength="100" required />
+  <label for="email1">Your email: </label>
+  <input id="email1" type="text" name="email" maxlength="100" required />
+  <label for="languanges1">Your email: </label>
+  <input
+    id="languanges1"
+    type="text"
+    name="languages"
+    maxlength="100"
+    required
+  />
+  <input type="submit" value="OK" />
+</form>
