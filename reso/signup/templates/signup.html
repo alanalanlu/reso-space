@@ -1,7 +1,6 @@
-<p>WHATS UP CUaZZIN</p>
-<form action="/userform/" method="post">
+<form action="/confirmation/" method="post">
   {% csrf_token %}
-  <label for="name1">Your name: </label>
+  <!-- <label for="name1">Your name: </label>
   <input id="name1" type="text" name="name" maxlength="100" required />
   <label for="email1">Your email: </label>
   <input id="email1" type="text" name="email" maxlength="100" required />
@@ -12,6 +11,8 @@
     name="languages"
     maxlength="100"
     required
-  />
-  <input type="submit" value="OK" />
+  /> -->
+  <!-- {{ form }} -->
+  {{ form.as_table }}
+  <input type="submit" value="Submit" />
 </form>
